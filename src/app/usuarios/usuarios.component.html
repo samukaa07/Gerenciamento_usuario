@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="back-button-container">
+        <button routerLink="/welcome" class="btn btn-primary">Pagina inicial</button>
+    </div>
+    <h2>Área de Cadastros</h2>
+    <button (click)="novoUsuario()" class="btn btn-success">Novo Usuário</button>
+    <div *ngIf="usuarioAtual" class="user-form">
+        <form (ngSubmit)="salvarUsuario()">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input id="nome" [(ngModel)]="usuarioAtual.nome" name="nome" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input id="email" type="email" [(ngModel)]="usuarioAtual.email" name="email" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="tipoDeUsuarioId">Tipo de Usuário:</label>
+                <select id="tipoDeUsuarioId" [(ngModel)]="usuarioAtual.tipoDeUsuarioId" name="tipoDeUsuarioId" required class="form-control">
+                    <option value="1">Admin(1)</option>
+                    <option value="2">User(2)</option>
+                    <option value="3">Gestor(3)</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-info">{{ editando ? 'Atualizar Usuário' : 'Criar Usuário' }}</button>
+            <button (click)="cancelarEdicao()" class="btn btn-secondary">Cancelar</button>
+        </form>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Tipo de Usuário</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usuario of usuarios">
+                <td>{{ usuario.id }}</td>
+                <td>{{ usuario.nome }}</td>
+                <td>{{ usuario.email }}</td>
+                <td>{{ usuario.tipoDeUsuarioId }}</td>
+                <td>
+                    <button (click)="iniciarEdicao(usuario)" class="btn btn-primary">Editar</button>
+                    <button (click)="deletarUsuario(usuario.id)" class="btn btn-danger">Deletar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
