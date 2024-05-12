@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-button-container,
+.form-group,
+.table {
+    margin-top: 20px;
+}
+
+.btn {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.table th {
+    background-color: #f4f4f4;
+}
+
+.btn-primary { background-color: #d4e2f1; }
+.btn-success { background-color: #28a745; }
+.btn-info { background-color: #17a2b8; }
+.btn-secondary { background-color: #6c757d; }
+.btn-danger { background-color: #dc3545; }
+
+.btn:hover {
+    opacity: 0.8;
+}
+body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+      
+        footer {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
