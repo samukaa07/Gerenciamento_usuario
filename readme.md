@@ -46,10 +46,10 @@ Pré-requisitos:
            ▪ Backend:
                • /api/usuarios: Endpoint principal para operações CRUD de usuários.
 
-Descrição
+Descrição:
 Este documento oferece uma visão geral do desenvolvimento de um sistema para gerenciamento de usuários, destacando as principais funcionalidades e estruturas tanto do backend quanto do frontend.
 
-Backend
+Backend:
 O backend foi desenvolvido utilizando:
 
 Spring Boot: Simplifica a configuração e o lançamento da aplicação.
@@ -62,7 +62,7 @@ GerenciamentoUsuarioApplication: Ponto de entrada da aplicação Spring Boot.
 UsuarioController: Gerencia as operações CRUD para usuários.
 WebConfig: Configuração CORS para permitir requisições de diferentes origens.
 
-Frontend
+Frontend:
 O frontend foi desenvolvido com Angular 17, proporcionando uma interface responsiva e interativa:
 
 Componentes: AppComponent e UsuariosComponent para gerenciar as operações e visualizações dos usuários.
@@ -71,14 +71,8 @@ Rotas: Definições de navegação entre as diferentes telas da aplicação.
 Estilos e Temas:
 Utiliza Google Fonts (Roboto) e Material Icons.
 Tema Angular Material (purple-green.css) para uma UI consistente e moderna.
-Ferramentas e Tecnologias
+Ferramentas e Tecnologias:
 Ambiente de Desenvolvimento: Desenvolvido utilizando Angular 17 para o frontend e Spring Boot para o backend.
 Tratamento de Erros: Utilização de MatSnackBar para exibir mensagens de feedback das operações.
-Configuração e Uso
+Configuração e Uso:
 Instruções para configurar e executar o projeto localmente, incluindo requisitos como Node.js e JDK, além de passos para iniciar o servidor e a aplicação frontend.
-
-Contribuição
-Detalhes sobre como outros desenvolvedores podem contribuir para o projeto, incluindo padrões de código, práticas recomendadas e processo para submissão de pull requests.
-
-Licença
-Informações sobre a licença sob a qual o projeto é distribuído.
